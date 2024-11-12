@@ -1,0 +1,511 @@
+* {
+
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  
+  /* Style the header */
+
+  body {
+		font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgb(63 63 63);
+    background: rgb(63 63 63);
+    z-index: 10;
+      position: sticky;
+      top: 0px;
+ 
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+		transition: all 0.5s ease;
+		font-size: 1rem;
+	  &:hover {
+			color:white;
+      background: rgba(102,177,241,0.8);
+			transition: all 0.5s ease;
+    }
+}
+
+
+/* https://codepen.io/DuskoStamenic/pen/ZEvBKdw */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+:root {
+  --color: rgb(63 63 63);
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+.tital {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+
+  background-image: url(/Pic/20241011_221139054_iOS.jpg);
+  background-position: center;
+  background-size: contain;
+  color: var(--color);
+  row-gap: 4rem;
+}
+
+.parallax-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+
+  background-image: url(/Pic/20241011_221139054_iOS.jpg);
+  background-position: center;
+  background-size: contain;
+  color: var(--color);
+  row-gap: 4rem;
+  
+
+  text-align: center;
+}
+/*buffer*/
+.buffer {
+  width: 100%;
+  min-height: 0vh;
+  background-color: #F7F54A;
+}
+
+.parallax-container2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 6rem 0;
+  background-image: url(/Pic/Untitled\ design.png);
+  gap: 1.6em;
+}
+
+p {
+  max-width: 52ch;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  border-radius: 0.3em;
+  background-color: var(--color);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card1 {
+  display: flex;
+  max-width: auto;
+  bottom: 50%;
+  left: 50%;
+  flex-direction: row;
+  
+ 
+  padding-bottom: 1rem;
+  border-radius: 0.5em;
+
+  background-color: white;
+  box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+}
+
+.card-img1 {
+
+  width: 900px;
+  height: 900px;
+  border-radius: 0.3em;
+  background-size: contain;
+background-repeat: no-repeat;
+}
+
+.fw {
+  font-weight: bold;
+   top: 50%;
+   right: 30px;
+   
+}
+
+.card1:nth-of-type(1) .card-img1 {
+  background-image: url(Pic/makeine_visual.avif);
+}
+ 
+.card {
+  display: flex;
+  max-width: 320px;
+  flex-direction: column;
+  align-items: center;
+ 
+  padding-bottom: 1rem;
+  border-radius: 0.5em;
+
+  background-color: white;
+  box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+}
+
+.card-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.3em;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img2 {
+  transform: scale(0.11);
+  width: 2500px;
+  height: 400px;
+  border-radius: 0.3em;
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-of-type(1) .card-img {
+  background-image: url(Pic/A-1_Pictures_Logo.svg.png);
+}
+
+.card:nth-of-type(2) .card-img2 {
+  background-image: url(PIc/Crunchyroll_2024.svg.png);
+}
+
+.card:nth-of-type(3) .card-img {
+  background-image: url(Pic/slump_good_man_write.png);
+}
+
+
+
+ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+    letter-spacing: 30px;
+  }
+  
+  li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 80px; 
+  }   
+
+  li:hover {
+    color: #DBE9EE;
+  }       
+      
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 1000px;
+  }
+
+
+  footer {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  h3 .foot {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  ul .foot{
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  a .foot{
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  ul  {
+    opacity:0.8;
+  }
+  
+  a:hover {
+    opacity:0.8;
+  }
+  
+  .item:not(.social) {
+  text-align:center;
+  padding-bottom:20px;
+  }
+ 
+  
+  .item.text {
+    margin-bottom:36px;
+  }
+  
+  
+  .item.text {
+  margin-bottom:0;
+  }
+  
+  
+  .item.text {
+  opacity:0.6;
+  margin-bottom:0;
+  }
+
+  p {
+  opacity:0.6;
+  margin-bottom:0;
+  }
+  
+  .item.social {
+  text-align:center;
+  }
+  
+  
+  .item.social {
+  text-align:center;
+  margin-top:20px;
+  }
+  
+  
+  .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+  }
+  
+  .item.social > a:hover {
+  opacity:0.9;
+  }
+  
+  .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+  }
+
+
+
+
+
+
+
+  #character1:hover {
+    width: auto;
+    height: auto;
+    position: relative;
+top: 40px; left: 40px;
+}
+  .choose {
+    width: 100px;
+    height: auto;
+
+}
+
+.buttonrow {
+  position: absolute;
+  left: center;
+  top: 150px;
+ flex-direction: row;
+ letter-spacing: justify;
+ letter-spacing: 20px;
+}
+
+.allpic {
+  left: 15%;
+  top: 250px;
+  position: absolute;
+  width: auto;
+  height: 1000px;
+  
+}
+
+.card2 {
+  display: flex;
+  max-width: auto;
+  left: 60%;
+  top: 600px;
+  position: absolute;
+  flex-direction: row;
+  color: rgb(0, 0, 0);
+  
+ 
+  padding-bottom: 1rem;
+  border-radius: 0.5em;
+
+  background-color: white;
+  box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+}
+ h12 {
+  max-width: 52ch;
+  padding: 1em;
+  line-height: 1.5;
+  color: black;
+}
+ h13 {
+  left: 66%;
+  top: 450px;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: #070A7D;
+ }
+
+
+
+
+
+
+
+ .placepic{
+  width: 70%;
+  height: auto;
+  left: center;
+  top: -100px;
+  position: relative;
+ }
+
+ .google-map {
+  width: 90%;
+  height: auto;
+  left: center;
+  top: 0px;
+  position: relative;
+}
+
+h15 {
+  left: center;
+  top: -50px;
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: #070A7D;
+ }
+
+ .leftright {
+  width: 80px;
+  height: auto;
+  left: -40%;
+  position: relative;
+  padding-bottom: 1rem;
+  border-radius: 0.5em;
+}
+
+.rightleft {
+  width: 80px;
+  height: auto;
+  left: 40%;
+  position: relative;
+  padding-bottom: 1rem;
+  border-radius: 0.5em;
+}
+
+.video {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  
+}
+
+h21 {
+  left: center;
+  top: 200px;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: #070A7D;
+ }
+
+ 
+.wallpaper {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  
+}
+
+h22 {
+  left: center;
+  top: 100px;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+ }
+
+
+
+

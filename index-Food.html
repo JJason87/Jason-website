@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <title>Too Many Losing Heroines !</title>
+
+    <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+
+    <script type="text/javascript" src="myscripts.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="index-Home.html">Home</a>
+      <a class="et-hero-tab" href="index-Charecter.html">Character</a>
+      <a class="et-hero-tab" href="index-Place.html">Place</a>
+      <a class="et-hero-tab" href="index-Food.html">song</a>
+      <a class="et-hero-tab" href="index-Date.html">Wallpaper</a> 
+    </div>
+
+      </section>
+
+      
+  
+      <section class="parallax-container parallax-container2">
+
+        <img src="pic/button left.jpg" alt="Click to mv" onclick="playPreviousVideo()" style="cursor: pointer;" class="leftright"    />
+        <img src="pic/button right.jpg" alt="Click to mv" onclick="playNextVideo()" style="cursor: pointer;" class="rightleft"    />
+
+        <video id="videoPlayer" class="video" controls>
+          <source id="videoSource" src="pic/Too many op1.mp4" type="video/mp4">
+         </video>
+
+         <h21 id="videoTitle" class="mvtitle">TSUYOGARU GIRL</h21>
+
+         <script>
+        // Array of video URLs
+        const videos = [
+            "pic/Too many op1.mp4",
+            "pic/Too many ed1.mp4",
+            "pic/Too many ed2.mp4",
+            "pic/Too many ed3.mp4"
+        ];
+
+        const titles = [
+            "TSUYOGARU GIRL",
+            "LOVE 2000",
+            "CRAZY FOR YOU",
+            "feel my soul"
+        ];
+
+        // Current video index tracker
+        let currentVideoIndex = 0;
+
+        function playNextVideo() {
+            currentVideoIndex++;
+            if (currentVideoIndex >= videos.length) currentVideoIndex = 0;
+            updateVideoSource();
+        }
+
+        function playPreviousVideo() {
+            currentVideoIndex--;
+            if (currentVideoIndex < 0) currentVideoIndex = videos.length - 1;
+            updateVideoSource();
+        }
+
+        function updateVideoSource() {
+            const videoPlayer = document.getElementById("videoPlayer");
+            const videoSource = document.getElementById("videoSource");
+            const videoTitle = document.getElementById("videoTitle");
+
+            // Update video source and title
+            videoSource.src = videos[currentVideoIndex];
+            videoTitle.textContent = titles[currentVideoIndex];
+            document.title = titles[currentVideoIndex];  // Update the browser tab title
+
+            videoPlayer.load();  // Load the new video source
+            videoPlayer.play();  // Automatically play the video
+        }
+    </script>
+         
+      </section>
+
+
+
+
+
+  
+      <section class="buffer"></section>
+
+      
+
+
+
+
+      
+
+    
+
+    
+
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 class="foot">Services</h3>
+                    <ul class="foot">
+                        <li class="foot"><a class="foot" href="#">Web design</a></li>
+                        <li class="foot"><a class="foot" href="#">Development</a></li>
+                        <li class="foot"><a class="foot" href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 class="foot">contect</h3>
+                    <ul class="foot">
+                        <li class="foot"><a class="foot" href="#">instergram</a></li>
+                        <li class="foot"><a class="foot" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtuve</a></li>
+                        <li class="foot"><a class="foot" >778-878-8787</a></li>
+                    </ul>
+                  </divz>
+            </div>
+            <p class="copyright">Jason Tsai © 2024</p>
+          </div>
+        
+  
+    </footer>
+
+    
+
+</body>
+
+</html>
+
+
+
+
+

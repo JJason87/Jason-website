@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <title>Too Many Losing Heroines !</title>
+
+    <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+
+    <script type="text/javascript" src="myscripts.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="index-Home.html">Home</a>
+      <a class="et-hero-tab" href="index-Charecter.html">Character</a>
+      <a class="et-hero-tab" href="index-Place.html">Place</a>
+      <a class="et-hero-tab" href="index-Food.html">song</a>
+      <a class="et-hero-tab" href="index-Date.html">Wallpaper</a> 
+    </div>
+
+      </section>
+
+      
+  
+      <section class="parallax-container parallax-container2">
+
+        <img src="pic/button left.jpg" alt="Click to mv" onclick="showPreviousImage()" style="cursor: pointer;" class="leftright"    />
+        <img src="pic/button right.jpg" alt="Click to mv" onclick="showNextImage()" style="cursor: pointer;" class="rightleft"    />
+        
+        <img id="imageViewer" src="pic/MAKEINE1.jpg" alt="Image" class="wallpaper">
+        
+        <h22 class="mvtitle">Wallpaper are from the author X:@imigimuru</h22>
+      </section>
+
+      <script>
+        // Array of image URLs
+        const images = [
+            "pic/MAKEINE1.jpg",
+            "pic/MAKEINE2.jpg",
+            "pic/MAKEINE3.jpg",
+            "pic/MAKEINE4.jpg",
+            "pic/MAKEINE5.jpg",
+            "pic/MAKEINE6.jpg",
+            "pic/MAKEINE7.jpg",
+            "pic/MAKEINE8.jpg",
+            "pic/MAKEINE9.jpg",
+            "pic/MAKEINE10.jpg",
+            "pic/MAKEINE11.jpg",
+            "pic/MAKEINE12.jpg"
+        ];
+
+        // Current image index tracker
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            currentImageIndex++;
+            if (currentImageIndex >= images.length) currentImageIndex = 0;
+            updateImageSource();
+        }
+
+        function showPreviousImage() {
+            currentImageIndex--;
+            if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+            updateImageSource();
+        }
+
+        function updateImageSource() {
+            const imageViewer = document.getElementById("imageViewer");
+
+            // Update image source
+            imageViewer.src = images[currentImageIndex];
+        }
+    </script>
+  
+      <section class="buffer"></section>
+
+     
+
+
+    <div id="cta">
+
+    </div>
+
+    
+
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3 class="foot">Services</h3>
+                  <ul class="foot">
+                      <li class="foot"><a class="foot" href="#">Web design</a></li>
+                      <li class="foot"><a class="foot" href="#">Development</a></li>
+                      <li class="foot"><a class="foot" href="#">Hosting</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3 class="foot">contect</h3>
+                  <ul class="foot">
+                      <li class="foot"><a class="foot" href="#">instergram</a></li>
+                      <li class="foot"><a class="foot" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtuve</a></li>
+                      <li class="foot"><a class="foot" >778-878-8787</a></li>
+                  </ul>
+                </divz>
+          </div>
+          <p class="copyright">Jason Tsai © 2024</p>
+        </div>
+      
+
+  </footer>
+
+    
+
+</body>
+
+</html>
+
+
+
+
+
